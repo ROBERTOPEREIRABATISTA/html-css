@@ -11,22 +11,24 @@
 
         table{
             width: 300px;
+            height: 400px;
             border-collapse: collapse;
-            border: 5px solid red;
-        }
-
-        tr.linha{
-            background-color: gray;
+        
         }
 
         td{
             border: 1px solid black;
             padding: 8px;
+            text-align:center ; /* alinhamento horizontal:right(direita) left(esqerda)*/
+            vertical-align: middle; /*alinhamento vertical: top(encima)  bottom(embaixo) middle(no meio)*/
+        }
+        /*criar classe*/
+        .numero{
+            text-align: left;
+
         }
 
-        td.dado{
-            background-color: chartreuse;
-        }
+       
     </style>
 </head>
 <body>
@@ -45,21 +47,21 @@
             <td>B1
             <td>C1
          </tr>
-         <tr class="linha"> <!--segunda linha-->
+         <tr> <!--segunda linha-->
             <td>A2
             <td>B2
             <td>C2
          </tr>
          <tr> <!--terceira linha-->
-            <td>A3</td>
+            <td class="numero">A3</td>
             <td>B3</td>
             <td>C3</td>
          </tr>
          <tr> <!--quarta linha-->
-            <td>A4</td>
-            <td  class="dado">B4</td>
+            <td class="numero">A4</td>
+            <td>B4</td>
             <td>C4</td>
-            <!--segundo o consorcio 3wc não é obrigatório o fechamento das tag </tr> e </td> é opcional-->
+            <!--segundo o consorcio w3c não é obrigatório o fechamento das tag </tr> e </td> é opcional-->
             
             
          </tr>
