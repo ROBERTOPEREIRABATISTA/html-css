@@ -11,12 +11,17 @@
 
         table{
             border-collapse: collapse;
+            width: 300px;
         }
+        
 
         th,td{
             border: 1px solid black;
             padding: 10px;
         } 
+        #tab{
+         border-bottom: ;
+        }
         
         
     </style>
@@ -27,8 +32,16 @@
             <tr>
                 <th scope="row">Àrea</th>
                 <th scope="rowgroup">Disciplina</th>
-                <th>Notas</th>
-                
+
+
+                <th colspan="2">Notas
+                    <table id="tab">
+                        <th>nota 1</th>
+                        <th>nota 2</th>
+                    </table>
+
+
+                </th>
                 <th>Mèdia</th>
         </thead>
         <tbody>
